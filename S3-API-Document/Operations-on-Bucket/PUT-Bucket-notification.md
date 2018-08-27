@@ -32,7 +32,7 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
                 </FilterRule>
            </S3Key>
         </Filter>
-        <Topic>TopicARN</Topic>
+        <Topic>NS:endpoint1,endpoint2</Topic>
         <Event>event-type</Event>
         <Event>event-type</Event>
         ...
