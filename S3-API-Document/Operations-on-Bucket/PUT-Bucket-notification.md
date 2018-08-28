@@ -1,9 +1,9 @@
 # PUT Bucket notification
 
 ## 描述
-OSS支持[事件通知](https://www.jdcloud.com/help/detail/7065/isCatalog/1)功能，您可以指定某些资源发生相关操作时及时进行消息通知。OSS事件通知是异步进行的，不影响OSS操作。
+OSS支持[回调通知](https://www.jdcloud.com/help/detail/7065/isCatalog/1)功能，您可以指定某些资源发生相关操作时及时进行消息通知。OSS回调通知是异步进行的，不影响OSS操作。
 
-您可通过PUT Bucket notification指定某个Bucket创建或更改事件通知配置。事件通知配置(NotificationConfiguration)为XML格式，默认情况下，您的Bucket未配置事件通知，所以事件通知配置(NotificationConfiguration)为空，您可以通过添加空的NotificationConfiguration来关闭事件通知。
+您可通过PUT Bucket notification指定某个Bucket创建或更改回调通知配置。回调通知配置(NotificationConfiguration)为XML格式，默认情况下，您的Bucket未配置回调通知，所以回调通知配置(NotificationConfiguration)为空，您可以通过添加空的NotificationConfiguration来关闭事件通知。
 ```
 <NotificationConfiguration>
 </NotificationConfiguration>
