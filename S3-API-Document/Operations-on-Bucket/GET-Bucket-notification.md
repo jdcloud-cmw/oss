@@ -1,7 +1,7 @@
 # GET Bucket notification
 
 ## 描述
-该操作可返回指定Bucket的事件通知配置（NotificationConfiguration），如果未配置通知，则操作将返回空NotificationConfiguration元素。
+该操作可返回指定Bucket的回调通知配置（NotificationConfiguration），如果未配置通知，则操作将返回空NotificationConfiguration元素。
 
 ## 请求
 ### 语法
