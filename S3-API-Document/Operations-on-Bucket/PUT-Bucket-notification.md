@@ -28,7 +28,7 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
                 </FilterRule>
                 <FilterRule>
                     <Name>suffix</Name>
-                    <Value>prefix-value</Value>
+                    <Value>suffix-value</Value>
                 </FilterRule>
            </S3Key>
         </Filter>
