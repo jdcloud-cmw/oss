@@ -3,7 +3,7 @@
 本节介绍如何使用S3 SDK完成管理Objcet常见操作，包括上传Obcjet、下载Obcjet、删除Obcjet、批量删除Object、复制\移动\重命名Object等。
 
 ## 上传Obcjet
-```
+```java
 String bucket_name = "<your bucketname>";
 String file_path = "<your path>";
 String key = Paths.get(file_path).getFileName().toString();
@@ -20,7 +20,7 @@ System.out.println("Done!");
 
 ## 下载Object
 
-```
+```java
 String bucket_name = "<your bucketname>";
 String key = "your keyname";
 System.out.format("Downloading %s from S3 bucket %s...\n", key, bucket_name);
@@ -51,7 +51,7 @@ try {
 
 ## 删除Object
 
-```
+```java
 String bucket_name = "<your bucketname>";
 String key = "<your keyname>";
 
@@ -65,7 +65,7 @@ try {
 
 ## 复制\移动\重命名Object
 
-```
+```java
 String from_bucket = "<your source bucketname>";
 String to_bucket = "<your destination bucket name>";
 String object_key = "<your keyname>";
@@ -81,7 +81,7 @@ try {
 
 ## 批量删除Obcjets
 
-```
+```java
 String bucket_name = "<your bucketname>";
 String[] object_keys = {"keyname1","keyname2","..." };
 
