@@ -69,6 +69,7 @@ try {
 String from_bucket = "<your source bucketname>";
 String to_bucket = "<your destination bucket name>";
 String object_key = "<your keyname>";
+String object_key1 = "<your keyname>";
 
 try {
     s3.copyObject(from_bucket, object_key, to_bucket, object_key1);
