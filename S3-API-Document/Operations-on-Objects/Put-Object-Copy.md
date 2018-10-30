@@ -3,6 +3,8 @@
 ## 描述
 创建一个已存在的Object的副本，该copy操作等同于先执行GET操作再执行PUT操作。可通过x-amz-copy-source头指定要复制的源Bucket及源Object。在OSS中可以操作的最大的单个Object为5G，超过5G，请使用分片上传Upload Part-Copy操作。要执行此操作，您需要有源Bucket的READ权限及目标Bucket的WRITE权限。
 
+当OSS收到Put Object-Copy请求或OSS正在执行Copy时，该请求可能返回错误。如果在Copy执行之前发生错误，则会收到标准的OSS错误；如果在执行Copy的过程中发生错误，则Copy的错误会嵌入200 OK的响应中，所以200 OK响应的Copy结果可能是成功或失败。
+
 ## 请求
 ### 语法
 ```
