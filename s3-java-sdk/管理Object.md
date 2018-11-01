@@ -1,8 +1,8 @@
-# 管理Obcjet
+# 管理Object
 
 本节介绍如何使用S3 SDK完成管理Objcet常见操作，包括上传Obcjet、下载Obcjet、删除Obcjet、批量删除Object、复制\移动\重命名Object等。
 
-## 上传Obcjet
+## 上传Object
 ```java
 String bucket_name = "<your bucketname>";
 String file_path = "<your path>";
@@ -80,7 +80,7 @@ try {
 ```
 注：您可以将 copyObject 与 deleteObject 配合使用来移动或重命名Object，方式是先将Object复制到新名称 (您可以使用与源和目标相同的Bucket)，然后从旧位置删除Obcjet。
 
-## 批量删除Obcjets
+## 批量删除Objects
 
 ```java
 String bucket_name = "<your bucketname>";
