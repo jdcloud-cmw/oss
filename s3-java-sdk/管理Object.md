@@ -1,6 +1,6 @@
 # 管理Object
 
-本节介绍如何使用S3 SDK完成管理Objcet常见操作，包括上传Obcjet、下载Obcjet、删除Obcjet、批量删除Object、复制\移动\重命名Object等。
+本节介绍如何使用S3 SDK完成管理Object常见操作，包括上传Object、下载Object、删除Object、批量删除Object、复制\移动\重命名Object等。
 
 ## 上传Object
 ```java
