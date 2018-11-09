@@ -11,7 +11,7 @@ OSS支持[回调通知](https://docs.jdcloud.com/cn/object-storage-service/callb
 
 ## 请求
 ### 语法
-```
+```xml
 PUT /?notification HTTP/1.1
 Host: <bucket>.s3.<region>.jcloudcs.com
 Date: <date>
@@ -72,7 +72,7 @@ HTTP 403 Forbidden|AccessDenied|您不是该Bucket的拥有者
 
 ## 示例
 ### 请求示例
-```
+```xml
 PUT /?notification HTTP/1.1
 Host: oss-example.s3.<region>.jcloudcs.com
 Date: <date>
