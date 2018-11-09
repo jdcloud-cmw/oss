@@ -1,0 +1,41 @@
+# 回调通知
+
+本节介绍如何使用S3 SDK设置回调通知。
+
+## 设置回调通知
+
+```java
+String bucketName = "<your bucketname>";
+
+BucketNotificationConfiguration bucketNotificationConfiguration = new BucketNotificationConfiguration();
+
+TopicConfiguration topicConfiguration = new TopicConfiguration();
+topicConfiguration.setTopicARN("NS:endpoint1,endpoint2"); //设置回调URL
+topicConfiguration.addEvent("<event>"); //设置触发回调的事件类型
+
+FilterRule prefixRule = S3KeyFilter.FilterRuleName.Prefix.newRule(); //设置前缀规则
+prefixRule.setValue("<your prefix>");
+FilterRule suffixRule = S3KeyFilter.FilterRuleName.Suffix.newRule(); //设置后缀规则
+suffixRule.setValue("<your suffix>");
+
+S3KeyFilter s3Key = new S3KeyFilter();
+s3Key.addFilterRule(prefixRule);
+s3Key.addFilterRule(suffixRule);
+Filter filter = new Filter();
+filter.setS3KeyFilter(s3Key);
+topicConfiguration.setFilter(filter); //设置触发回调通知的相关资源
+
+bucketNotificationConfiguration.addConfiguration("<your-id>", topicConfiguration);
+
+s3.setBucketNotificationConfiguration(bucketName, bucketNotificationConfiguration);
+```
+
+## 查看回调通知配置
+
+```java
+String bucketName = "<your bucketname>";
+
+BucketNotificationConfiguration configuration = s3.getBucketNotificationConfiguration(bucketName);
+System.out.println(JSON.toJSON(configuration));
+
+```
