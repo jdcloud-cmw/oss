@@ -10,7 +10,7 @@
 ## 请求
 ### 语法
 以下请求为在请求body中发送ACL。如要使用Header指定permissions，请参阅“请求Header”部分。
-```
+```xml
 PUT /?acl HTTP/1.1
 Host: <bucket>.s3.<region>.jcloudcs.com 
 Date: <date>
@@ -81,13 +81,9 @@ Permission|指定的权限<br>Type: String<br>Valid Values: FULL_CONTROL、WRITE
 ### Grantee Values
 您可以通过以下方式使用请求为被授权者授予权限：
 * 通过person's ID
-```
+```xml
 <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser"><ID><replaceable>ID</replaceable></ID><DisplayName><replaceable>GranteesEmail</replaceable></DisplayName>
 </Grantee>
-```
-* 通过URL
-```
-<Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Group"><URI><replaceable>http://acs.amazonaws.com/groups/global/AllUsers</replaceable></URI></Grantee>
 ```
 注：当前OSS支持的Grantee类型是CanonicalUser（用户UserID）；仅支持一种Group类型：AllUsers。
 
@@ -101,7 +97,7 @@ Permission|指定的权限<br>Type: String<br>Valid Values: FULL_CONTROL、WRITE
 
 ### 示例（在请求body中指定acl）
 #### 请求示例
-```
+```xml
 PUT ?acl HTTP/1.1
 Host: oss-example.s3.<region>.jcloudcs.com 
 Content-Length: 1660
