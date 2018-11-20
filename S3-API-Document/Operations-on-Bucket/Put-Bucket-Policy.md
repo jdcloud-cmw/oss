@@ -1,7 +1,7 @@
 # Put Bucket Policy
 
 ## 描述
-该操作可设置指定Bucket的policy，仅Bukcet的Owner可操作。更多Bucket Policy相关信息，请访问https://www.jdcloud.com/help/detail/1858/isCatalog/1
+该操作可设置指定Bucket的policy，仅Bukcet的Owner可操作。更多Bucket Policy相关信息，请访问https://docs.jdcloud.com/cn/object-storage-service/set-bucket-policy-2
 
 ## 请求
 ### 语法
