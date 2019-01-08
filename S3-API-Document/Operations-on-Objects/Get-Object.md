@@ -1,7 +1,7 @@
 # Get Object
 
 ## 描述
-该操作可以从OSS中取回Object,您必须对该Object有READ权限。如果该Oject权限为公有读，则可在不进行签名认证的情况下取回Object。
+该操作可以从OSS中取回Object,您必须对该Object有READ权限。如果该Object权限为公有读，则可在不进行签名认证的情况下取回Object。
 
 ## 请求
 ### 语法
