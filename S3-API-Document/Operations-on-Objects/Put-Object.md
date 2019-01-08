@@ -23,7 +23,7 @@ Authorization: <authorization string> (see Authenticating Requests (AWS Signatur
 名称|描述|必须
 ---|---|---
 Cache-Control|指定该Object被下载时的网页的缓存行为；更详细描述请参照RFC2616。<br>Type: String<br>Default: None<br>Constraints: None|否
-Content-Disposition|指定返回的Object该以何种形式展示；更详细描述请参照RFC2616。<br>Type: String<br>Default: None<br>Constraints: None|否
+Content-Disposition|指定返回的Object该以何种形式展示,长度限制为100个字节；更详细描述请参照RFC2616。<br>Type: String<br>Default: None<br>Constraints: None|否
 Content-Encoding|它的值表示消息主体进行了何种方式的内容编码转换，用来告知客户端应该怎样解码才能获取在 Content-Type 中标示的媒体类型内容；更详细描述请访问RFC2616。<br>Type: String<br>Default: None<br>Constraints: None|否
 Content-Length|Object的大小，单位为byte；更详细描述请参照RFC2616。<br>Type: String<br>Default: None<br>Constraints: None|是
 Content-MD5|对报文主体进行MD5算法获得128位二进制数，再通过Base64编码写入Content-MD5。可用于数据完整性检查。<br>Type: String<br>Default: None<br>Constraints: None|否
