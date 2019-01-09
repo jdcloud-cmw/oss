@@ -34,14 +34,8 @@ Content-MD5|对128位MD5进行base64编码。该Header用来确定请求实体�
         <Status>rule-status</Status>
         <Prefix>key-prefix</Prefix>
         <Destination>        
-
            <Bucket>arn:aws:s3:::bucket-name</Bucket>
-           <StorageClass>optional-destination-storage-class-override</StorageClass>
-           <Account>The destination bucket owner account Id used if owner override is used</Account>
-           <AccessControlTranslation>
-              <Owner>Destination</Owner>
-           </AccessControlTranslation>          
-
+           <StorageClass>optional-destination-storage-class-override</StorageClass>     
         </Destination>    
     </Rule>
     <Rule>
@@ -56,7 +50,7 @@ Content-MD5|对128位MD5进行base64编码。该Header用来确定请求实体�
 ---|---|---
 ReplicationConfiguration|复制规则的集合。最多1000条规则。总大小不超过2MB。<br>Type: Container<br>Children: Rule<br>Ancestor: None|是
 Rule|特性规则的信息集合。<br>Type: Container<br>Ancestor:ReplicationConfiguration|是
-ID|规则标识，最多255个字符。<br>Type: String<br>Ancestor: Rule|否
+ID|规则标识。<br>Type: String<br>Ancestor: Rule|否
 Status|规则状态<br>Type: String<br>Ancestor: Rule<br>Valid values: Enabled, Disabled|是
 Prefix|匹配前缀，最长不超过1024个字符，前缀不能重叠。<br>Type: String<br>Ancestor: Rule|是
 Destination|目的信息集合<br>Type: Container<br>Ancestor: Rule|是
