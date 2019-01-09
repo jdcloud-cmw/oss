@@ -24,7 +24,7 @@ max-keys| 限定此次返回object的最大数。如果要检索少于默认的1
 prefix| 限定返回的object必须以prefix作为前缀。您可以使用prefix将object分成不同的组。<br>Type: String<br>Default: None|否
 list-type| API Version 2需要此参数，且该参数值必须设置为2。<br>Type: String<br>Default:2|是
 continuation-token| 当响应元素 IsTruncated 为true时，则响应中会包含 NextContinuationToken 元素，您可以使用 NextContinuationToken 作为下一个请求中的 continuation-token 返回下一批object。<br>Type: String<br>Default: None|否
-fetch-owner| 默认情况下不会返回Bucket所有者信息，如果需要返回所有者信息，需指定fetch-owner值为ture<br>Type: String<br>Default: false|
+fetch-owner| 默认情况下不会返回Bucket所有者信息，如果需要返回所有者信息，需指定fetch-owner值为ture<br>Type: String<br>Default: false|否
 start-after| 如果您需要返回某个特定的object后的相关object，你可以将该特定object名称设为参数值。<br>Type: String<br>Default: None|否
 
 ### 请求元素
