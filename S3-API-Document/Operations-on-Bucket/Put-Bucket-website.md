@@ -33,7 +33,7 @@ Key|当4XX错误发生时，OSS返回的自定义错误页面。<br>Type: String
 RoutingRules|RoutingRule元素信息集合。<br>Type: Container<br>Ancestors: WebsiteConfiguration|否
 RoutingRule|指定重定向规则。在RoutingRules规则中，至少包含一个RoutingRule规则。<br>Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules|否
 Condition|重定向条件信息集合。<br>Type: Container<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule|否
-HttpErrorCodeReturnedEquals|HTTP错误代码，指定错误码发生时，则进行重定向。<br>Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Condition|否
+HttpErrorCodeReturnedEquals|HTTP错误代码，指定错误码发生时，则进行重定向。范围为400-499，不能<br>Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Condition|否
 Redirect|重定向信息的集合。<br>Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule|否
 HostName|重定向请求的Host。Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Redirect|否
 ReplaceKeyPrefixWith|将替换重定向请求中的 KeyPrefixEquals 值的对象键名称的前缀。<br>Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Redirect|否
