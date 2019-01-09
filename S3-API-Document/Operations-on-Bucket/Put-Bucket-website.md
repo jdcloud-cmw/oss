@@ -36,9 +36,7 @@ Condition|重定向条件信息集合。<br>Type: Container<br>Ancestors: Websit
 HttpErrorCodeReturnedEquals|HTTP错误代码，指定错误码发生时，则进行重定向。<br>Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Condition|否
 Redirect|重定向信息的集合。<br>Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule|否
 HostName|重定向请求的Host。Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Redirect|否
-ReplaceKeyPrefixWith|将替换重定向请求中的 KeyPrefixEquals 值的对象键名称的前缀。如果提供了一个同级，则 ReplaceKeyPrefixWith 不是必需的。仅在不提供 ReplaceKeyWith 时提供它。<br>Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Redirect|否
-ReplaceKeyWith|指定重定向请求中的Object。如果提供了一个同级，则 ReplaceKeyWith 不是必需的。仅在不提供 ReplaceKeyPrefixWith 时提供它。<br>Type:String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Redirect|否
-HttpRedirectCode|可在响应中返回的位置标头中使用的 HTTP 重定向代码。<br>Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Redirect|否
+ReplaceKeyPrefixWith|将替换重定向请求中的 KeyPrefixEquals 值的对象键名称的前缀。<br>Type: String<br>Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Redirect|否
 
 ## 响应
 ### 响应Header
