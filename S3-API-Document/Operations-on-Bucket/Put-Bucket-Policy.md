@@ -25,7 +25,7 @@ Body为JSON字符串，包含Policy语句。每个Policy可以有多个规则(St
 Action|该条规则生效的操作，支持操作：s3:DeleteBucket、s3:ListBucket、s3:GetObject、s3:PutObject、s3:DeleteObject|是
 Effect|如果匹配该规则的时候产生的效果，为Deny或者Allow|是
 Resource|该规则生效的资源，格式为arn:aws:s3:${bucket}/${dir}，默认为当前Bucket|是
-Principal|该规则生效的requester，JSON对象，支持通配符"*"，允许所有。例如{"AWS":["1000022","2322324"]}|是
+Principal|该规则生效的requester，JSON对象，支持通配符"*"，允许所有。例如{"AWS":["arn:aws:iam::191853487641:root"}|是
 Condition|该规则生成的条件，是JSON对象，目前只支持Referer和SourceIP|否
 
 ## 响应
@@ -50,7 +50,7 @@ Authorization: <authorization string>
         "Effect":"Allow",
         "Sid":"1", 
         "Principal" : {
-            "AWS":["111122223333","444455556666"]
+            "AWS":"arn:aws:iam::191853487641:root"
         },
         "Action":["s3:*"],
         "Resource":"arn:aws:s3:::bucket/*"
